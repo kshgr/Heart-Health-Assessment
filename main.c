@@ -590,7 +590,9 @@ int main(void){
     float weight, height;
 
     // TASK 2
-    
+    int i, systolicTotal = 0, diastolicTotal = 0;
+    int systolic, diastolic;
+    float systolicAverage, diastolicAverage;
 
     // TASK 3
     int ERICE;
@@ -632,9 +634,10 @@ int main(void){
                 // Task 2 - Blood Pressure Assessment
                 
                 //INPUT
-                int i, systolicTotal = 0, diastolicTotal = 0;
-                int systolic, diastolic;
-                float systolicAverage, diastolicAverage;
+                 
+                systolicTotal = 0;
+                diastolicTotal = 0;
+                
             
                     for(i = 0; i < 5; i++){
                         systolic = read_systolic(i);
